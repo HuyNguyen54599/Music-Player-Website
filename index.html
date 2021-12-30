@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/BloopTran.png" type="image/x-icon">
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="main">
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav__logo">
+                <img src="image/TransparentLogo.png" alt="logo">
+            </a>
+            <div class="nav__tools container">
+                <div class="nav__search">
+                    <input type="text">
+                    <i class='bx bx-search-alt-2'></i>
+                </div>
+                <div class="nav__control">
+                    <div class="sign__in">Sign in</div>
+                    <div class="nav__users">
+                        <div class="nav__notification">
+                            <i class='bx bxs-bell'></i>
+                            <span class="ring__on"></span>
+                        </div>
+                        <img src="image/gura.jpg" alt="avatar" class="nav__user">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MENU -->
+    <section class="menu">
+        <a href="" class="menu__logo">
+            <img src="image/TransparentLogo.png" alt="">
+        </a>
+        <ul class="menu__list">
+            <li class=" menu__item">
+                <a title="Home" class="menu__link">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-caret-right-circle'></i>
+                        </div>
+                        <p class="menu__title">Home</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" menu__item">
+                <a title="Radio" class="menu__link">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-radio'></i>
+                        </div>
+                        <p class="menu__title">Radio</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" menu__item">
+                <a title="Tracks" class="menu__link">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-music'></i>
+                        </div>
+                        <p class="menu__title">Tracks</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" menu__item">
+                <a title="Albums" class="menu__link">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-album'></i>
+                        </div>
+                        <p class="menu__title">Albums</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" menu__item menu__item--wrapper">
+                <a title="Favorite" class="menu__link menu__link--wrapper">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <p class="menu__title">Favorite</p>
+                    </div>
+                    <i class='bx bx-caret-down drop__toggle'></i>
+                </a>
+                <ul class="drop__list">
+                    <li class="drop__item">
+                        <a title="Tracks" class="drop__link menu__link">
+                            Tracks
+                        </a>
+                    </li>
+                    <li class="drop__item">
+                        <a title="Albums" class="drop__link menu__link">
+                            Albums
+                        </a>
+                    </li>
+                    <li class="drop__item">
+                        <a title="Singer" class="drop__link menu__link">
+                            Singer
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class=" menu__item">
+                <a title="Account" class="menu__link">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <p class="menu__title">Account</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" menu__item">
+                <a title="Setting" class="menu__link">
+                    <div class="list__content">
+                        <div class="menu__icon">
+                            <i class='bx bxs-cog'></i>
+                        </div>
+                        <p class="menu__title">Setting</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- END MENU -->
+
+    <!-- MAIN PAGE -->
+    <section class="mainpage container">
+        <div class="albums">
+            <ul class="albums__list">
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/kiara.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/wastion.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/smolame.png" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/smol kiara.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/calli.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/gurabb.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/Ina.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/smolcalli.jfif" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/inatako.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <p class="album__title">Hololive English</p>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="album__item">
+                    <div class="album__package">
+                        <div class="overlay__package"></div>
+                        <img src="image/smol gura.jpg" alt="album item" class="album__img">
+                        <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                    </div>
+                    <div class="album__content">
+                        <h3 class="album__title">Hololive English</h3>
+                        <p class="album__author">Gawr Gura</p>
+                        <ul class="reviews__list">
+                            <li class="reviews__element">
+                                <i class='bx bxs-spa'></i>
+                                <p class="views__reviews">15K</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-heart'></i>
+                                <p class="like__reviews">156</p>
+                            </li>
+                            <li class="reviews__element">
+                                <i class='bx bxs-analyse'></i>
+                                <p class="list__reviews">25</p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="author">
+            <div class="author__album">
+                <div class="album__package">
+                    <img src="image/gura.jpg" alt="album item" class="album__img">
+                    <img src="image/Vinyl record.png" alt="album disk" class="album__cd">
+                </div>
+                <div class="album__content">
+                    <h3 class="album__title">Hololive English</h3>
+                    <p class="album__author">Gawr Gura</p>
+                    <ul class="reviews__list">
+                        <li class="reviews__element">
+                            <i class='bx bxs-spa'></i>
+                            <p class="views__reviews">15K</p>
+                        </li>
+                        <li class="reviews__element">
+                            <i class='bx bxs-heart'></i>
+                            <p class="like__reviews">156</p>
+                        </li>
+                        <li class="reviews__element">
+                            <i class='bx bxs-analyse'></i>
+                            <p class="list__reviews">25</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="song__list">
+                <!-- <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Hazy Moon - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Ai Wo Komete - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Harehare Ya - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Hotaru Fujita - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Kimi Datara - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Nandemonai Ya - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Yume To Hazakura - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Letter Song - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Renai Circulation - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Sakura Ame - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li> -->
+                <!-- <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Reflect - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Reflect - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Reflect - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Reflect - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li>
+                <li class="song__item">
+                    <i class='bx bxs-caret-right-circle song__play'></i>
+                    <p class="song__name">Reflect - Gawr Gura</p>
+                    <span class="song__time">4:07</span>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- END MAIN PAGE -->
+
+    <!-- MUSIC PLAYER -->
+    <section class="player container">
+        <div class="player__song">
+            <div class="player__title">
+                <img src="image/Ina.jpg" alt="song title">
+            </div>
+            <div class="player__content">
+                <h3 class="player__name">Ai Wo Komete</h3>
+                <p class="player__author">Ninomae Ina'nis</p>
+            </div>
+        </div>
+        <div class="player__control">
+            <div class="control__nav">
+                <i class='bx bx-shuffle'></i>
+                <i class='bx bx-skip-previous'></i>
+                <div class="control__toggle is__pause">
+                    <div class="control__toggle--play">
+                        <i class='bx bx-play'></i>
+                    </div>
+                    <div class="control__toggle--pause">
+                        <i class='bx bx-pause'></i>
+                    </div>
+                </div>
+                <i class='bx bx-skip-next'></i>
+                <i class='bx bx-repeat'></i>
+            </div>
+            <div class="control__bar">
+                <div class="range__input--player range__input">
+                    <div class="bar__process"></div>
+                    <input type="range" name="progress" min="0" max="100" value="0" class="music__range"
+                        id="music__progress">
+                </div>
+                <p class="music__time"> -4:07</p>
+            </div>
+            <div class="control__volume">
+                <div class="volume__status volume__state--low">
+                    <div class="volume__status--full">
+                        <i class='bx bxs-volume-full'></i>
+                    </div>
+                    <div class="volume__status--low">
+                        <i class='bx bxs-volume-low'></i>
+                    </div>
+                    <div class="volume__status--none">
+                        <i class='bx bxs-volume'></i>
+                    </div>
+                </div>
+                <div class="range__input--volume range__input">
+                    <div class="bar__process"></div>
+                    <input type="range" name="volume" min="0" max="100" value="100" class="volume__range"
+                        id="music__volume">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END MUSIC PLAYER -->
+    <audio src="music/Lovely Cover - Gawr Gura .mp3"></audio>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/music.js"></script>
+</body>
+
+</html>
